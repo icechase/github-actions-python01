@@ -1,5 +1,5 @@
 name: pytest
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 
 
 jobs:
@@ -7,6 +7,8 @@ jobs:
   pytest:
     runs-on: ubuntu-latest
     steps:
+      - name: print github actions
+        run: echo ${{ github.repositoryUrl }}
       - name: checkout code
         uses: actions/checkout@v3 
       - name: install pytest
