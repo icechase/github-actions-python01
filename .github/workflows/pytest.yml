@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone repository
-        run: 
+        run: |
           git clone https://github.com/icechase/github-actions-python01
           cd github-actions-python
       - name: install pytest
