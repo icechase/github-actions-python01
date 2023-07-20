@@ -10,7 +10,7 @@ jobs:
       - name: clone repository
         run: |
           git clone https://github.com/icechase/github-actions-python01
-          cd github-actions-python
+          cd github-actions-python01
       - name: install pytest
         run : pip install pytest
       - name: run pytest
